@@ -2,7 +2,3 @@ nav ul li a {
   font-family: "Arial", sans-serif;
   transition: color 0.3s ease;
 }
-
-nav ul li a:hover {
-  color: yellow; /* override Tailwind hover temporarily */
-}
