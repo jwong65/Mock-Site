@@ -1,16 +1,19 @@
-import { Link } from 'react-router-dom'
-import "./Navbar.css"
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <nav className="relative bg-gray-800">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-        <ul className="flex items-center gap-6 text-sm font-medium">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/shop">Shop</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
+    <nav className="bg-gray-800 w-full fixed top-0 left-0 z-50">
+      <div className="flex items-center justify-between px-6 py-4">
+      
+        <div className="text-white font-bold text-lg">Logo</div>
+
+        <div className="flex space-x-4">
+          <Link to="/" className="text-white hover:text-gray-300">Home</Link>
+          <Link to="/about" className="text-white hover:text-gray-300">About</Link>
+          <Link to="/contact" className="text-white hover:text-gray-300">Contact</Link>
+        </div>
       </div>
     </nav>
-  )
+  );
 }
