@@ -1,0 +1,15 @@
+/* This will target the <nav> element */
+nav {
+  border-bottom: 2px solid #ff00ff; /* custom pink bottom border */
+  width: 100 vw;
+}
+
+/* Target the links inside the navbar */
+nav ul li a {
+  font-family: "Arial", sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: yellow; /* override Tailwind hover temporarily */
+}
